@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PhotoRecipe</string>
+    <string name="txt_splash">Solis Farma</string>
+    <string name="app_version">1.2</string>
+    <string name="app_developer">SitePlanejado</string>
+
+    <string name="msg_network_status">Verifique sua conexão com a Internet</string>
+    <string name="msg_button_confirmation">Aceitar</string>
+    <string name="msg_title_information">Selecione a opção</string>
+    <string name="msg_exception_status">Ocorreu erro inesperado entre em contato reportando problema</string>
+</resources>
