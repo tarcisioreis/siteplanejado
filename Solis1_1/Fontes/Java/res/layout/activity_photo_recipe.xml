@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF0013"
+    tools:context="${packageName}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/llBotoes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:background="#000000" >
+        
+        <ImageButton
+            android:id="@+id/btCameraGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_developer"
+            android:onClick="abrirGaleria"
+            android:src="@android:drawable/ic_menu_gallery" />
+                
+        <ImageButton
+            android:id="@+id/btCameraTake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_developer"
+            android:onClick="tirarFoto"
+            android:src="@android:drawable/ic_menu_camera" />
+        
+        <ImageButton
+            android:id="@+id/btPrepareSendEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_developer"
+            android:onClick="prepararEnvioFoto"
+            android:src="@android:drawable/ic_menu_send" />
+
+        <ImageButton
+            android:id="@+id/btCameraDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_developer"
+            android:onClick="deletarFoto"
+            android:src="@android:drawable/ic_menu_delete" />
+        
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivFoto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llBotoes"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
+        android:src="@drawable/ic_background" />
+    
+</RelativeLayout>
